@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities (optional) */
+.rounded-btn {
+    @apply rounded-full px-6 py-2 font-medium transition;
+}
+
+.glow-btn:hover {
+    @apply shadow-[0_0_15px_rgba(255,215,0,0.7)];
+}
+
+.card-img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+.card-img:hover {
+    filter: grayscale(0%);
+}
