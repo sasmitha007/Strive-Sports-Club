@@ -57,7 +57,7 @@ function getUserRole(): ?int {
  * Require login; redirect if not authenticated.
  * Tip: If your project lives in a subfolder, use an absolute path from web root.
  */
-function requireLogin(string $redirect = '/Indoor%20sports%20club/pages/login.php'): void {
+function requireLogin(string $redirect = '/Strive%20Club/pages/login.php'): void {
     if (!isLoggedIn()) {
         header('Location: ' . $redirect);
         exit();
@@ -83,7 +83,7 @@ function loginUser(int $id, int $roleId, ?string $email = null, ?string $fullNam
 /**
  * Destroy session and clear cookies.
  */
-function logoutUser(string $redirect = '/Indoor%20sports%20club/pages/login.php'): void {
+function logoutUser(string $redirect = '/Strive%20Club/pages/login.php'): void {
     if (session_status() === PHP_SESSION_NONE) session_start();
     $_SESSION = [];
 
