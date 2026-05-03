@@ -12,7 +12,7 @@ try {
         // require_once __DIR__ . '/../config/db.php'; // if you prefer central config
         if (!isset($pdo)) {
             $dsn = 'pgsql:host=localhost;port=5432;dbname=isports_club';
-            $pdo = new PDO($dsn, 'postgres', 'UOG0723002', [
+            $pdo = new PDO($dsn, 'postgres', 'DB_Password', [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             ]);
         }
