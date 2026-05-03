@@ -4,7 +4,7 @@ class Database {
     private static $port = '5432';
     private static $dbname = 'isports_club';
     private static $user = 'postgres';
-    private static $password = 'UOG0723002';
+    private static $password = 'DB_Password';
 
     private static $conn = null;
 
